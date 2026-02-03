@@ -29,12 +29,11 @@ h1 {
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
-
 .buttons {
   position: relative;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  width: 320px;
+  height: 120px;
+  margin: 0 auto;
 }
 
 button {
@@ -49,12 +48,16 @@ button {
 #yesBtn {
   background-color: #ff4d6d;
   color: white;
+  position: relative;
+  left: 0;
 }
 
 #noBtn {
   background-color: #555;
   color: white;
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #confetti {
@@ -62,3 +65,4 @@ button {
   inset: 0;
   pointer-events: none;
 }
+
