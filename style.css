@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  background: url("bg.jpg") center / cover no-repeat fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,14 +14,24 @@ body {
 
 .container {
   text-align: center;
+  background: rgba(0,0,0,0.45);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
 }
 
 h1 {
-  color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+#message {
+  min-height: 24px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .buttons {
+  position: relative;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -33,7 +43,7 @@ button {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 #yesBtn {
@@ -44,13 +54,11 @@ button {
 #noBtn {
   background-color: #555;
   color: white;
+  position: absolute;
 }
 
 #confetti {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
 }
